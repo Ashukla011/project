@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>sign in</title>
+    <link rel="stylesheet" href="style signin.css"/>
+    <form>
+    
+       <div id="container">
+       <div>
+        <img src=
+        "https://cfcdn20.candere.com/skin/frontend/default/new_design_candere/images/sign_up_popup/sign_in.jpg?v=1640020320"alt="errro"/>
+       </div>
+       
+       <div class="inside-container">
+        <h3>LOGIN</h3>
+           <div><input type="email" placeholder="Enter Email Address / Mobile" id="email"/></div>
+            <div><input type="submit" value="CONTINUE " class="continue" /></div>
+            <p>Don’t have an Account?
+                <a href="signUp.html">Sign Up</a></p>
+        </div>
+        
+       </div>
+    </form>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",signfun)
+
+    var sign=JSON.parse(localStorage.getItem("storageData"))||[];
+    function signfun()
+    {
+        event.preventDefault();
+
+      var EnterEmail=document.querySelector("#email").value;
+      for(var i=0;i<sign.length;i++)
+      {
+          flag=false;
+          if(sign[i].email==EnterEmail)
+          {
+            flag=true;
+          }
+        
+         
+      }
+        if(flag==true)
+        {
+            alert("Login successfull")
+               
+        }
+        else{
+                alert(" login faild")
+            }
+    }
+</script>

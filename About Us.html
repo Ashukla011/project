@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2a05cd7cd7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+
+/* navbar TOP */
+    #topbox{
+        height: 43px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        justify-content: space-around;
+       
+    }
+    /* topleft side content */
+    #topboxleft{
+       height: 43px;
+        width: 360px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+    }
+            /* topleft side innercontent */
+    
+    #topboxleftinner{
+        height: 16px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        gap: 3px;
+       color: darkgray;
+       font-size: 11px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+    }
+
+         /* topright side content */
+    
+    #topboxright{
+       height: 43px;
+        width: 270px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        
+    }
+    
+     /* topright side inner content */
+    #topboxrightinner{
+       height: 16px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex; 
+        gap: 3px;
+       color: darkgray;
+       font-size: 11px;
+        cursor: pointer; 
+        gap: 5px;   
+    }
+
+    /* social media icons */
+    .navICON{
+        display: flex;
+       color: red;
+        font-size: 14px;
+        justify-content: space-around;
+        gap: 10px;
+       margin-top: -7px;
+    }
+    i{
+      border-radius: 50px;
+        font-size: 24px;   
+    }
+   
+   /* ---------------------------START OF NAVBAR CHANGES CSS PART---------------------- */
+   nav ul{
+       padding: 0 -15px;
+       margin: 0;
+       float:initial;
+       margin-left: 70px;
+       margin-top: -40px;
+   }
+   nav ul li{
+       background: white;
+       position: relative;
+       list-style: none;
+       display: inline-flex;
+       margin-right: 2px;
+       margin-left: 5px ;
+   }
+   .navlinemain{
+       background: white;
+   }
+   .navlinemain:hover{
+        cursor: pointer;
+        border-bottom: 1.5px solid #e30613;color: #e30613;   
+   }
+   nav ul li a{
+       display: block;
+       padding: 0 15px;
+       color: #777171;
+       text-decoration: none ;
+       line-height: 40px;
+       font-size: 15px;
+   }
+   nav>ul>li>ul>li>a{
+       color: black;
+       background-color: white;
+       font-size: medium;
+   }
+   nav>ul>li>ul>li>a:hover{
+       border: none;
+       color: lightgrey;
+   }
+   nav ul ul{
+        position: absolute;
+        top: 60px;
+        display: none;
+
+   }
+   nav ul li:hover > ul{
+       display: block;
+
+   }
+   nav>ul>li>ul>li{
+       width: auto;
+       margin-left: -95px; 
+   }
+   nav ul ul li{
+       width: 100px;
+       float: none;
+       display: list-item;
+       position: relative;
+   }
+   /* navbar center logo image */
+   #logo{
+       height: 150px;
+       width: 130px;
+       margin:-20px 20px -40px 20px 
+   }
+   .amitabh{
+       width: 100%;
+       height: 400px;
+   }
+   
+   
+   .lineA{
+       background-color: #e30613;
+     border: 0.2px solid #e30613;
+     width:100%;
+
+   }
+   .curve{
+    height:42px ;
+    width: 7%;
+    margin-left: 50%;
+   /* -webkit-transform: translate(-50%,0%); */
+   background-color:none ;
+   margin-top: -33.9px;
+   margin-bottom: 00px;
+   }
+   .line{
+       background-color: #e30613;
+     border: 0.2px solid #e30613;
+     width:80%;
+
+   }
+
+   .vertiaclline {
+  /* border-left: 1px solid black; */
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+.Histry{
+    width: 70%;
+    height: 500px;
+    /* border:1px solid black; */
+    margin:auto;
+    display: flex;
+
+
+}
+.Histry>img{
+    width:100%;
+    height:500px;
+
+
+}
+.span{
+    text-decoration:underline 2px solid red ;
+   
+
+}
+.cmd{
+    width: 80%;
+    height: 500px;
+    /* border:1px solid black; */
+    margin:auto;
+    display: flex;
+}
+.cmd>img{
+    width:100%;
+    height:500px;
+}
+.cmdcode{
+    width: 80%;
+    height: 300px;
+    /* border:1px solid black; */
+    margin:auto;
+    padding: 20px
+}
+.Ed{
+    width: 80%;
+    height: 500px;
+    /* border:1px solid black; */
+    margin:auto;
+    display: flex;
+}
+.Ed>div{
+    width: 50%;
+    height: 550px;
+    /* border:1px solid black; */
+}
+.Ed>.ed1{
+   
+   width: 70%;
+   height: 550px;
+}
+.Ed.ed2{
+    width: 30%;
+   height: 550px;
+}
+.Edimg{
+    width: 100%;
+    height: 550px;
+}
+.excutive{
+    width: 80%;
+    height: 500px;
+    margin:auto;
+    margin-top:70px;
+    display: flex;
+    /* border:1px solid black; */
+}
+.excutive>div{
+    width: 50%;
+    height: 500px;
+    /* border:1px solid black */
+}
+.excutive>.ex{
+  width: 30%;
+  height: 500px;
+}
+.excutive>.ex2{
+  width: 70%;
+  height: 500px;
+}
+.eximg{
+    width: 100%;
+    height: 500px;
+    
+    /* order:1px solid black; */
+}
+.vision{
+    width: 80%;
+    height: 500px;
+    margin:auto;
+    margin-top:100px;
+    display: flex;
+    /* border:1px solid black; */
+}
+.vision>div{
+    width: 50%;
+    height: 500px;
+    /* border:1px solid black */
+}
+.logo{
+    width: 50%;
+    height: 500px;
+}
+.nerwark{
+    width: 80%;
+    height: 100px;
+    margin:auto;
+    margin-top:100px;
+    padding: 10px;
+    /* border:1px solid black */
+}
+.India{
+    width: 80%;
+    height: 150px;
+    margin:auto;
+   
+    padding: 10px;
+    /* border:1px solid black */
+}
+.map{
+    width: 80%;
+    height: 500px;
+    margin:auto;
+    /* border:1px solid black; */
+}
+.imgmap{
+    width: 100%;
+    height: 500px;
+}
+.overseas{
+    width: 80%;
+    height: 100px;
+    margin:auto;
+    /* border:1px solid black; */
+}
+.Association{
+    width: 80%;
+    height: 130px;
+    margin:auto;
+    /* border:1px solid black; */
+}
+.Associationimg{
+    width: 80%;
+    height: 400px;
+    margin:auto;
+    /* margin-top:15px; */
+    /* border:1px solid black; */
+}
+img{
+    width: 100%;
+    height: 400px;
+   
+   
+}
+.story{
+    width: 80%;
+    height: 80px;
+    margin:auto;
+    margin-top:70px;
+}
+.storyimg{
+    width: 80%;
+    height: 400px;
+    margin:auto;
+    margin-top:30px;
+}
+img{
+    width: 100%;
+    height: 400px;
+}
+.last{
+  width: 100%;
+  height: 100px;
+  background-color:lightgray;
+}
+h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#353535;
+    font-size:25px
+}
+p{
+    color:#777171;
+    font-size:20px;
+}
+</style>
+
+
+
+
+   <!-- ------------------------END OF NAVBAR CHANGES CSS PART--------------------------- -->
+
+<body>
+      <!-- navbar TOP-->
+      <div id="topbox">
+        <div id="topboxleft">
+            <div id="topboxleftinner">
+                 <div>MY KALYAN /</div>
+                 <div>MEDIA /</div>
+                 <div>KALYAN NEWS /</div>
+                 <div>GOLD RATES /</div>
+                 <div>DIGITAL GOLD</div>
+            </div>
+        </div>
+     
+       <div></div>
+     <div id="topboxright">
+         <div id="topboxrightinner">
+            <div>FEEDBACK /</div>
+            <div>CONTACT /</div>
+            <div class="navICON">
+                <i  class="fa-brands fa-facebook"></i>
+                <i  class="fa-brands fa-twitter-square"></i>
+                <i  class="fa-brands fa-youtube"></i>
+                <i  class="fa-brands fa-instagram-square"></i>
+            </div>
+         </div> 
+     </div>
+    </div>
+
+
+    <!-- ---------------------------STARTING OF NAV BAR CHANGES------------------------------------- -->
+
+    <nav style="font-family: 'PT Sans', sans-serif;">
+        <ul>
+            <li><a href="" class="navlinemain">OUR BRANDS</a>
+                    
+                <ul>
+                    <!-- <div style="width: 300%; margin-left: -95px;"><h5 style="text-decoration: underline;">BRANDS FAMILY</h5></div> -->
+                    <li><a href="mudra.html" style="margin-top: 22px;">MUDHRA</a></li>
+                    <li><a href="">NIMAH</a></li>
+                    <li><a href="">ANOKHI</a></li>
+                    <li><a href="">RANG</a></li>
+                    <li><a href="">TEJASVI</a></li>
+                    <li><a href="">ZIAH</a></li>
+                </ul> 
+            </li>
+            <li><a href="" class="navlinemain">MUHURAT</a>
+                <ul>
+                    <li><a href="" style="margin-top: 22px;">GUJRAT</a></li>
+                    <li><a href="muhurat.html">MAHARASHTRA</a></li>
+                    <li><a href="">Punjab </a></li>
+                    <li><a href="">RAJASTHAN</a></li>
+                    <li><a href="">UP </a></li>
+                </ul> 
+            </li>
+            <li><a href="shopOnline.html" class="navlinemain">SHOP ONLINE</a>
+
+            </li>
+            <li><a href="jewellery.html" class="navlinemain">JEWELLERY</a>
+                <ul>
+                    <li><a href="" style="margin-top: 22px;" >CHAINS</a></li>
+                    <li><a href="">RINGS</a></li>
+                    <li><a href="">NECKLACES</a></li>
+                    <li><a href="">EARINGS</a></li>
+                    <li><a href="">BRACELETS</a></li>
+                    <li><a href="">BANGLES</a></li>
+                </ul> 
+            </li>
+            <img id="logo"  src="https://www.kalyanjewellers.net/images/kalyan_logo.svg" alt="kalyan_logo">
+            <li><a href="aboutUs.html" class="navlinemain">ABOUT US</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+                
+            </li>
+            <li><a href="giftCard.html" class="navlinemain">GIFT CARD</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+            </li>
+            <li><a href="ambassador.html" class="navlinemain">AMBASSADOR</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+            </li>
+            <li><a href="storeLocator.html" class="navlinemain">STORE LOCATOR</a>
+                <!-- <ul>
+                    <li></li>
+                    ADD MORE OPTIONS HERE IF YOU WANT SIMILAR AS ABOVE
+                </ul> -->
+            </li>
+        </ul>
+    </nav>
+
+    <!-- -------------------END OF NAV BAR CHANGES----------------------------- -->
+
+<div>
+    <img src="https://www.kalyanjewellers.net/images/banners/about_banner.jpg"alt="" class="amitabh"/>
+
+</div>
+<p>HOME/ABOUT US </p>
+<!-- corve img -->
+<hr class="lineA">
+<div class="curve"><img  src="https://www.kalyanjewellers.net/images/devider.svg" alt=""></div>
+<!--  -->
+<div class="Verticalline">
+
+</div>
+<div class="ABOUT US">
+    <H1>ABOUT US</H1>
+    <P>When you gift jewellery you achieve immortality in their heart.</P>
+
+    <!--  -->
+
+    <div class="Histry">
+       <img src="file:///C:/Screenshot%20(2032).jpg"alt/>
+    </div>
+    <h1><span class="span">CMD's </span>Message</h1>
+<h3>T.S. Kalyanaraman</h3>
+<p>Today, when I look around me, business is all about toplines, bottomlines and market capitalisation. But Kalyan entered into business in a</p>
+
+<p> pre-independent India to build a better India, as our forefathers believed ethical, fair business will make India self-sufficient and strong.</p>
+
+<div class="cmd">
+    <img src="https://www.kalyanjewellers.net/images/cmd-img.jpg"alt=""/>
+</div>
+<div class="cmdcode">
+
+    <p>Personally, I believe Kalyan Jewellers' major achievement is the trust we have earned from millions of people across the length and
+        <br/>breadth of a huge subcontinent like India, and abroad in the GCC.</p>
+        <p>We have always believed in fair and transparent business. We have believed that the customer should be understood so well that we know his needs much before he understands them himself. 
+            We have believed that an enlightened customer is the best customer.
+         
+            These are the simple principles that have  <br/>helped us reach where we are today.</p>
+            <p>Today, Kalyan Jewellers has 137 retail stores spread across INDIA and MIDDLE EAST. Pampered by your unbound love and support and
+                <br>with the blessings of the Almighty, we believe we are in the right path towards the accomplishment of our vision to open stores and 
+                <br>serve customers across the world.
+            </p>
+</div>
+  <hr class="line"/>
+  <h3><span class="span">ED's </span>Message</h3>
+  <div class="Ed">
+      <div class="ed1">
+          <h3>Rajesh Kalyanaraman -<span>Executive Director</span> </h3>
+          <p>I feel our biggest differentiator is not only the ability to understand local,
+               think local and act local, but at the same time bring in our vast experience and 
+               sourcing strength out of operating in multiple markets. Jewellery is a complicated
+                product, because tastes vary even within the same state. What helps us here is the
+                 huge variety of products we stock from artisans across the country and even the Arab 
+                 countries. We carefully and painstakingly select the designs of our products and customise 
+                 
+                 them according to the demands of the consumer demography of each market we step into as India 
+                 is such a vast country with diverse tastes.</p>
+                 <p>We have something for everyone. Highly skilled craftsmen create our products along with 
+                     stringent quality control measures which creates that perfection in the products we sell.</p>
+      </div class="ed2">
+      <div>
+          <img src="https://www.kalyanjewellers.net/images/rajesh-kalayan-full.jpg"alt="" class="Edimg"/>
+      </div>
+    </div>
+      <div class="excutive">
+          <div class="ex">
+              <img src="https://www.kalyanjewellers.net/images/ramesh-kalayan-full.jpg"alt="" class="eximg"/>
+              
+          </div>
+         <div class="ex2">
+             <h3><span>Ramesh Kalyanaraman - </span>Executive Director</h3>
+             
+             <p>We have always visualized everything on a large scale. We always enjoyed
+                  making the road and never thought of following a trail. Massive marketing
+                   campaigns and launches, path-breaking ads which were never-before seen in
+                    jewellery advertising, multi-storey large format jewellery showrooms, same-day 
+                    multi-launch ceremonies and events. We have always worked with the best to endorse 
+                    our brand at all levels, our brand ambassadors come from very respected families in 
+                    their states, and they are known worldwide among their diaspora. We introduced a lot 
+                    to jewellery retailing - customer loyalty programs, price tags, customer service centers,
+                     corporate tie-ups and many such things. We have always believed in thinking ahead of the 
+                     customer, in his interest, for his interest.</p>
+          <p>We have immense gratitude towards everybody who set their feet into a Kalyan store and we would always
+               want everyone to continue to be a part of this vibrant family at Kalyan and we will do anything and everything
+                for that.</p>
+            </div>
+     
+  </div> 
+
+  <div class="vision">
+      <div>
+          <img src="https://www.kalyanjewellers.net/images/kalyan_logo.svg"alt="" class="logo"/>
+      </div>
+      <div>
+          <H3>VISION</H3>
+          <P>Our Vision is our framework that guides our business and everything about it</P>
+          <P>To understand and delight the world, translating everyone’s dream and personality into
+               jewellery, and spread the happiness from it to all.</P>
+               <H3>Mission</H3>
+               <P>Our mission declares our purpose of existence as a company and our objectives.</P>
+               <P>To give every customer much more than what he/she asks for in terms of quality, selection, value for money and customer service, by understanding local tastes and preferences and innovating constantly to eventually provide an unmatched experience in jewellery shopping.
+
+            </P>
+      </div>
+  </div>
+  <hr class="line"/>
+  <div class="nerwark">
+  <h3><span class="span">Our</span> Network</h3>
+  <p>With over 135 showrooms, Kalyan Jewellers is spread across India and the Middle East.</p>
+  </div>
+  <div class="India">
+      <h3>INDIA</h3>
+      <p>We have a strong presence across 21 states and union territories, and our 100-plus network
+           of showrooms cover all major cities. Moreover, the 'My Kalyan' hub-and-spoke model outlets,
+            act as Customer Service Centers, ensuring Kalyan Jewellers is more accessible to households in rural areas.</p>
+  </div>
+  <div class="map">
+      <img src="https://www.kalyanjewellers.net/images/global-presence.jpg" alt=""class="imgmap"/>
+  </div>
+  <diV class="overseas">
+      <h3>OVERSEAS</h3>
+      <P>As on June 30, 2020, have 30 showrooms in the GCC spread across UAE, Qatar, Kuwait and Oman.</P>
+  </diV>
+  <hr class="line"/>
+  <div class="Association">
+      <h3><span class="span">Associa</span>tion</h3>
+      <p>We associate with global icons who bring out our core message in the best way possible. Our ambassadors come from incredibly well-respected families and 
+          are renowned for their credibility worldwide.</p>
+          
+  </div>
+  <div class="Associationimg">
+      <img src="https://www.kalyanjewellers.net/images/association.jpg"alt=""/>
+  </div>
+  <hr class="line"/>
+  <div class="story">
+      <h3><span class="span">Custom</span>er Stories</h3>
+  </div>
+  <div class="storyimg">
+      <img src="file:///C:/Users/kavan/Pictures/Screenshots/Screenshot%20(2033).png"alt=""/>  
+    </div>
+    <hr class="lineA"/>
+    <div class="last">
+    <!-- <input>SUBSCRIBE THE KALYAN NEWSLETTER<input/> -->
+    <input type="Email"/>
+    </div>
+</body>
+</html>
